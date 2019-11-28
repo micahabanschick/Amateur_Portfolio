@@ -5,54 +5,178 @@
 	<title>Page 2</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>
+		* {
+			margin:0px;
+			padding:0px;
+		}
+		
 		body {
 			background-image:url("wallpaper.jpg");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
 			word-wrap: break-word;
-			margin-left:100px;
-			margin-right:100px;
+			line-height:2em;
 		
 		}
-		div {
-			
-			background: rgba(117,221,221,0.4);
-			
-			
+		
+		header {
+			<!-- background-color:brown; -->
 		}
-		h1 {
-			background-color:rgba(199,21,133,0.8);
+		
+		header h1 {
+			background:rgba(199,21,133,0.8);
 			text-align:center;
 			border-top-left-radius:50px;
-			border-bottom-right-radius:50px;
+			border-top-right-radius:50px;
 			padding:10px;
 		}
 		
-		div footer {
+		header nav {
+			background-color: purple;
+			border-bottom-left-radius:50px;
+			border-bottom-right-radius:50px;
+			padding:3px;
+		}	
+		
+		header nav ul {
+			list-style-type:none;
+			margin-left: 230px;
+			padding: 0px;
+			overflow: hidden;
+			
+		}
+		
+		header nav li {
+			float:left;
+			margin:2px;
+			padding:2px;
+		}
+		
+		header nav li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 2px;
+			text-decoration: none;
+		}
+		
+		li a:hover {
+			background-color: #111111;
+		}
+		
+		.sidebar {
+			background:rgba(15,82,186,0.8);
+			position:absolute;
+			border-top-right-radius:10px;
+			margin: 0px 20px 0px 20px;
+			width:130px;
+		}
+		
+		header,section,footer {
+			margin-left:170px;
+			margin-right:170px;
+			
+		}
+		
+		section {
+			background:rgba(117,221,221,0.4);
+	
+		}
+
+		section main {
+			padding: 50px 200px 50px 200px;
+		}
+		
+		main figure {
+			float:center;
+			padding:7px;
+			opacity:100%;
+			position:relative;
+			right:200px;
+			bottom:50px;
+			
+		}
+		
+		section article {
+			padding: 50px 100px 0px 100px;
+		}
+		
+		
+		
+		footer {
 			color:white;
 			font-size:12px;
 			background-color:black;
 			text-align:center;
-			position:fixed;
-			bottom:0px;
-			width:80.22%;
-			
+					
 		}
-		#profile {
-			float:left;
-			padding:7px;
-			opacity:100%;
-		}
+		
+		
 		
 	</style>
 </head>
 <body>
-	<audio controls>
+	<audio controls autoplay loop>
 		<source src="music.mp3" type="audio/mp3">
 		
 	</audio>
-	<h1>Micah's Website</h1>
-	<div>
-		
-		<span><img id="profile" src="profile.jpg" alt="Profile" width="250px" height="200px">sdvsdfvsyfffffffffffffmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+	<header>
+		<h1>Micah's Website</h1>
+		<nav>
+			<ul>
+				<li><a href="#About">About</a></li>
+				<li><a href="#Contact">Contact</a></li>
+				<li><a href="#Resume">Resume</a></li>
+				<li><a href="#Projects">Projects</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="sidebar" style="right:0px;border-top-right-radius:10px;">
+		<aside>
+			<nav>
+				<h3>dfgslkjhbjkh</h3>
+				<p>
+				mmmmmmmmmmmmmmmmmmmmmmmmm<br>
+				mmmmmmmmmmmmmmmmmmmmmmmmm<br>
+				mmmmmmmmmmmmmmmmmmmmmmmmm<br>
+				mmmmmmmmmmmmmmmmmmmmmmmmm<br>
+				mmmmmmmmmmmmmmmmmmmmmmmmm<br>
+				mmmmmmmmmmmmmmmmmmmmmmmmm<br>
+				mmmmmmmmmmmmmmmmmmmmmmmmm<br>
+				mmmmmmmmmmmmmmmmmmmmmmmmm<br>
+				mmmmmmmmmmmmmmmmmmmmmmmmm<br>
+				mmmmmmmmmmmmmmmmmmmmmmmmm<br>
+				mmmmmmmmmmmmmmmmmmmmmmmmm<br>
+				mmmmmmmmmmm
+				</p>
+			</nav>
+		</aside>
+	</div>
+	<div class="sidebar" style="left:0px;border-top-left-radius:10px;">
+		<aside>
+			<nav>
+				<h3>dfgslkjhbjkh</h3>
+				<p>
+				mmmmmmmmmmmmmmmmmmmmmmmmm<br>
+				mmmmmmmmmmmmmmmmmmmmmmmmm<br>
+				mmmmmmmmmmmmmmmmmmmmmmmmm<br>
+				mmmmmmmmmmmmmmmmmmmmmmmmm<br>
+				mmmmmmmmmmmmmmmmmmmmmmmmm<br>
+				mmmmmmmmmmmmmmmmmmmmmmmmm<br>
+				mmmmmmmmmmmmmmmmmmmmmmmmm<br>
+				mmmmmmmmmmmmmmmmmmmmmmmmm<br>
+				mmmmmmmmmmmmmmmmmmmmmmmmm<br>
+				mmmmmmmmmmmmmmmmmmmmmmmmm<br>
+				mmmmmmmmmmmmmmmmmmmmmmmmm<br>
+				mmmmmmmmmmm
+				</p>
+			</nav>
+		</aside>
+	</div>
+	<section>
+		<main>
+			<figure><img src="profile.jpg" alt="Profile" width="250px" height="200px"></figure>
+		sdvsdfvsyfffffffffffffmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 		mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 		mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 		mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
@@ -64,6 +188,9 @@
 		mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 		mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 		mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+		</main>
+		
+		<article>
 		mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 		mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 		mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
@@ -77,6 +204,9 @@
 		mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 		mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 		mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+		</article>
+		
+		<article>
 		mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 		mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 		mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmff
@@ -92,13 +222,14 @@
 		mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 		mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 		mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
-		mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</span>
-	</div>
-	<div>
-		<footer>
-			<p><span>|&nbsp&nbsp<img src="https://img.icons8.com/cute-clipart/23/000000/phone.png"> (914)714-3677&nbsp&nbsp|&nbsp&nbsp<img src="https://img.icons8.com/color/25/000000/gmail.png">&nbspmicha.ban@gmail.com&nbsp&nbsp|&nbsp&nbsp<img src="https://img.icons8.com/nolan/30/000000/github.png">&nbspmicahabanschick&nbsp&nbsp|<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@a2eorigins?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Alex Perez"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Alex Perez</span></a>&nbsp&nbsp|</span></p>
-			<p><span>|&nbsp<a href="https://icons8.com/icon/121243/phone">Phone icon by Icons8</a>&nbsp|&nbsp<a href="https://icons8.com/icon/37246/gmail">Gmail icon by Icons8</a>&nbsp|&nbsp<a href="https://icons8.com/icon/52539/github">GitHub icon by Icons8</a>&nbsp|&nbsp<a href="https://www.bensound.com/">Music: <em>Adventure</em> from Bensound.com</a>&nbsp|</span></p>
-		</footer>
-	</div>
+		mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+		</article>
+	</section>
+	
+	
+	<footer>
+		<p><span>|&nbsp&nbsp<img src="https://img.icons8.com/cute-clipart/23/000000/phone.png"> (914)714-3677&nbsp&nbsp|&nbsp&nbsp<img src="https://img.icons8.com/color/25/000000/gmail.png">&nbspmicha.ban@gmail.com&nbsp&nbsp|&nbsp&nbsp<img src="https://img.icons8.com/nolan/30/000000/github.png">&nbspmicahabanschick&nbsp&nbsp|<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@a2eorigins?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Alex Perez"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Alex Perez</span></a>&nbsp&nbsp|</span></p>
+		<p><span>|&nbsp<a href="https://icons8.com/icon/121243/phone">Phone icon by Icons8</a>&nbsp|&nbsp<a href="https://icons8.com/icon/37246/gmail">Gmail icon by Icons8</a>&nbsp|&nbsp<a href="https://icons8.com/icon/52539/github">GitHub icon by Icons8</a>&nbsp|&nbsp<a href="https://www.bensound.com/">Music: <em>Adventure</em> from Bensound.com</a>&nbsp|</span></p>
+	</footer>
 </body>
 </html>
